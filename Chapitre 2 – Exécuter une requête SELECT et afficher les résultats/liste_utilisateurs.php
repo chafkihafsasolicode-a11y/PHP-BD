@@ -17,4 +17,13 @@ try {
 }
 
 
-?>
+
+
+echo "<table border='1'>
+<tr><th>ID</th><th>Nom</th><th>Email</th></tr>
+";
+foreach ($utilisateurs as $user){
+    echo "<tr><td>{$user['id']}</td><td>{$user['nom']}</td><td>{$user['email']}</td></tr>";
+}
+
+echo "</table>";?>
